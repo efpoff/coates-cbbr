@@ -1,4 +1,4 @@
-# CollectionBuilder-CONTENTdm
+# CollectionBuilder-CONTENTdm edited to include Internet Archives BookReader for Compound Objects
 
 CollectionBuilder-CONTENTdm is a template for creating digital collection exhibits on top of existing CONTENTdm repositories.
 
@@ -9,6 +9,9 @@ Visit the [CollectionBuilder home](https://collectionbuilder.github.io/) for mor
 
 If you are interested in using CollectionBuilder, or are already using it, please drop us a line (**libstatic.uidaho@gmail.com**) since we would love to learn more about its use in the wild. 
 There are also currently opportunities to [collaborate on CollectionBuilder](https://collectionbuilder.github.io/about.html#the-grant).
+
+Note: This version has been adapted to target the IIIF manifest.json file available through CONTENTdm by using and adapting the iframe [Internet Archives Bookreader](https://github.com/internetarchive/bookreader) javascript file. The CSV file will need to be edited to target the top level of a compound object with the rest of the items removed. For best results, images within the compound object should be setup for optimized viewing within the bookreader (i.e. pages should line up properly).
+**This part is a work in progress and I am certain there is a more elegant solution which may show up here in the future. 
 
 ----------
 
@@ -22,8 +25,8 @@ Object metadata is exposed using [Schema.org](http://schema.org) and [Open Graph
 Questions can be directed to **libstatic.uidaho@gmail.com**
 
 ## License
-
 CollectionBuilder documentation and general web content is licensed [Creative Commons Attribution-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/). 
 This license does *NOT* include any objects or images used in digital collections, which may have individually applied licenses described by a "rights" field.
 CollectionBuilder code is licensed [MIT](https://github.com/CollectionBuilder/collectionbuilder-contentdm/blob/main/LICENSE). 
 This license does not include external dependencies included in the `assets/lib` directory, which are covered by their individual licenses.
+The Internet Archives BookReader source code license is AGPL v3, as described in the its [LICENSE file](https://github.com/internetarchive/bookreader).

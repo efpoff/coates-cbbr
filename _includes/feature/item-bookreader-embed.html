@@ -1,0 +1,14 @@
+{% comment %}
+    
+    Item PDF embed json manifest.
+    This include adds the Internet Archives BookReader to the page.
+
+    E.G. --> {% include feature/item-bookreader-embed.html %}
+
+    It requires an "objectid" with the include, which is used to find the object title and PDF link.
+    By default no height is necessary as it uses 1by1 Bootstrap responsive embed style, https://getbootstrap.com/docs/4.5/utilities/embed/
+
+    Note: if you have issues make sure the item is a PDF item 
+
+{%- endcomment -%}
+<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item bookreader-wrapper" src="{{ '/bookreader.html' | relative_url }}#{{ page.cdmid }}"></iframe></div>

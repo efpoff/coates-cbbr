@@ -11,8 +11,12 @@ gallery: true
     </ul>
 
     <div class="row">
+        {%- if page.format contains 'pdf' -%}
+        <div class="col-md-12">
+        {% else %}
         <div class="col-md-6" id="lightgallery">
-            <div class="card mb-4 text-center">
+        {%- endif -%}    
+                <div class="card mb-4 text-center">
                 {% if page.format contains 'image' %}
                 <div class="gallery-img" data-src="{% include image/original.html %}">
                     <p><img src="{% include image/large.html %}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid"></p>
@@ -33,6 +37,8 @@ gallery: true
                             <source src="{% include download/video.html %}" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
+                        {%- elsif page.format contains 'pdf' -%}
+                        {% include feature/item-bookreader-embed.html %}
                         {%- else -%}
                         <a href="{% include download/item.html %}" target="_blank"><img src="{% include image/thumb.html %}" alt="item thumbnail for {{ page.title | escape }}" class="img-fluid thumb"></a>
                         {%- endif -%}
@@ -51,8 +57,11 @@ gallery: true
                 </div>
             </div>
         </div>
-
+        {%- if page.format contains 'pdf' -%}
+        <div class="col-md-12">
+        {% else %}
         <div class="col-md-6">
+        {%- endif -%}    
             <div id="item-metadata" class="metadata">
                 <dl>
                     {% for f in fields %}{% if page[f.field] %}
@@ -72,9 +81,9 @@ gallery: true
         </div>
     </div>
 
-    <div class="row justify-content-end mt-4">
+    <div class="row justify-content-center mt-4">
         <div class="col-md-5">
-            <div class="card mb-2">
+            <div class="card mb-2 h-100">
                 <div class="card-header">Source</div>
                 <div class="card-body">
                     <dl>
@@ -88,7 +97,7 @@ gallery: true
         </div>
         {% if page.rights or page.rightsstatement %}
         <div class="col-md-5">
-            <div class="card mb-2">
+            <div class="card mb-2 h-100">
                 <div class="card-header">Rights</div>
                 <div class="card-body">
                     <dl>
@@ -119,7 +128,7 @@ gallery: true
     {%- endunless -%}
     {%- assign back_url = '/items/' | append: itemset[back] | append: '.html' | relative_url -%}
     {%- assign forward_url = '/items/' | append: itemset[forward] | append: '.html' | relative_url -%}
-    <div class="text-center">
+    <div class="text-center mt-4">
         <a class="btn btn-secondary" href="{{ back_url }}" id="prev-page-button">&laquo; Previous</a>
         <a class="btn btn-secondary" href="{{ '/browse.html' | relative_url }}" >Back to Browse</a>
         <a class="btn btn-secondary" href="{{ forward_url }}" id="next-page-button">Next &raquo;</a>

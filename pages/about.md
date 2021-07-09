@@ -8,7 +8,11 @@ permalink: /about.html
 
 {% include feature/jumbotron.html %}
 
-## About the Collection Builder CDM Skin
-This collection includes photographs documenting Trinity University's history from 1869 to the present. The historic images in the collection range in date throughout the University's first 100 years and are divided into 4 subject categories (based on the University's geographic location): the Tehuacana Images (1869-1902), the Waxahachie Images (1902-1942), the Woodlawn: San Antonio Images (1942-1952), and the Skyline Campus: San Antonio Images (mid 1950s-present).
+## About the Collection
+A pamphlet is a short work, typically unbound and without a cover, that are inexpensive to produce and easy to distribute to readers. Other terms that have been used for pamphlets include leaflets, flyers, and circulars. Because they are typically so inexpensive to print, pamphlets have long been a popular format for distributing religious, political, and social ideas to a wide audience. 
 
-These collections include glass plate images, tintypes, and gelatin photos, as well as traditional and digital photography. The digitization of this and other collections ensures the continued preservation and improved access to these resources.
+Coates Library Special Collections and Archives has several discrete collections of pamphlets. These collections were typically assembled by one individual with interest in a specific topic or area. Pamphlet collections in our holdings include the Sir Henry Hardman Collection, which largely focuses on labor movements (<a href="https://archives.trinity.edu/sir-henry-hardman-pamphlet-collection" target="_blank">finding aid</a>); the William C. Sullivan Collection, focusing on communism (<a href="https://archives.trinity.edu/william-c-sullivan-pamphlet-collection" target="_blank">finding aid</a>); and the Karl J. Pelzer Collection, focusing on Southeast Asia (<a href="https://archives.trinity.edu/karl-j-pelzer-pamphlet-collection" target="_blank">finding aid</a>). Pamphlets can also be found in our cataloged rare book holdings, as well as within other manuscript collections. 
+
+Materials are presented uncensored and in their original form; as such, they may contain racist language and stereotyped depictions of people of different races. Additions to this digital collection are ongoing. 
+
+ 

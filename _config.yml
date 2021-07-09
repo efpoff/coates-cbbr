@@ -8,29 +8,29 @@
 # URL VARIABLES
 #
 # site domain, full URL to the production location of your collection
-url: https://coateslibrary.com
+url: https://collections.coateslibrary.com
 # path to location on the domain if necessary e.g. /digital/hjccc
-baseurl: /demo/trinityhistory
+baseurl: /pamphlets
 # location of code, the full url to your github repository
-source-code: https://github.com/efpoff/coates-cb
+source-code: https://github.com/efpoff/coates-cbbr
 
 ##########
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: Trinity University Historical Images
+title: Historic Pamphlets
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: Digital Collection
+tagline: 
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "This collection includes photographs documenting Trinity University's history from 1869 to the present." 
+description: "Coates Library Special Collections and Archives has several discrete collections of pamphlets. Pamphlet collections in our holdings include the Sir Henry Hardman Collection, which largely focuses on labor movements; the William C. Sullivan Collection, focusing on communism; and the Karl J. Pelzer Collection, focusing on Southeast Asia." 
 # keywords, a short list of subjects describing the collection, separated by semicolon, to appear in rich markup
-keywords: trinity;history;photos 
+keywords: trinity;history;pamphlets; 
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
 author: Coates Library
 # Organization branding
 organization-name: "Coates Library Trinity University"
-organization-link: https://www.lib.trinity.edu
+organization-link: https://lib.trinity.edu
 organization-logo-banner: https://lib.trinity.edu/omekaimages/coateslogo_dark.png
 organization-logo-nav: https://lib.trinity.edu/wp-content/uploads/2017/12/coateslogo_white1.png
 
@@ -39,15 +39,15 @@ organization-logo-nav: https://lib.trinity.edu/wp-content/uploads/2017/12/coates
 # COLLECTION SETTINGS
 #
 # choose metadata: this is the name of the csv file in your _data directory that describes the objects in your collection
-metadata: trinityhistory_collection
+metadata: pamphlets_pdf2
 # contentdm collection name, matches collection ID used by CDM
-cdm-collection-id: p16264coll6
+cdm-collection-id: pamphlets
 # CONTENTdm server url
 cdm-url: https://cdm16264.contentdm.oclc.org
 # page generation settings 
 # "data" value must be the name of the metadata file (other values should be not be changed)
 page_gen:
-  - data: 'trinityhistory_collection'
+  - data: 'pamphlets_pdf2'
     template: 'items'
     name: 'objectid'
     dir: 'items'
@@ -60,7 +60,7 @@ page_gen:
 # leave these blank or comment out to NOT include google code. See docs/google.md
 #
 # Add your google-analytics-id to automatically add the embed code, e.g. "UA-76328753-1"
-# google-analytics-id:
+google-analytics-id: "UA-47392600-1"
 # to populate a Google CSE add the id, e.g. "002151703305773322890:1pu3smhw1t8"
 # google-cse-id: 
 
