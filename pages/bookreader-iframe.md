@@ -44,7 +44,8 @@ html, body, #BookReader { width: 100%; height:100%; margin:0; padding: 0; }
     let item = window.location.href.split('#')[1]
  
 let jsonData
-    fetch(server_url + '//digital/iiif-info/' + collection + '/' + item + '/manifest.json')
+  //  fetch(server_url + '//digital/iiif-info/' + collection + '/' + item + '/manifest.json')
+  fetch(server_url + '/iiif/2/' + collection + ':' + item + '/manifest.json')
     .then(response => {
         return response.json()
     }).then(data => {
