@@ -24,7 +24,7 @@ permalink: /bookreader.html
     <script src="assets/lib/BookReader/plugins/plugin.iframe.js"></script>
 
     <style>
-html, body, #BookReader { width: 100%; height:100%; margin:0; padding: 0; }
+     html, body, #BookReader { width: 100%; height:100%; margin:0; padding: 0; }
     </style>
 </head>
 <body style="background-color: #939598;">
@@ -38,10 +38,10 @@ html, body, #BookReader { width: 100%; height:100%; margin:0; padding: 0; }
 </div>
 <script type="text/javascript">
 //Script adapted from Internet Archives iframe bookreader and script from OCLC CONTENTdm integration
-	let json = {}	
-    let server_url = '{{ site.cdm-url }}'
-    let collection = '{{ site.cdm-collection-id }}'
-    let item = window.location.href.split('#')[1]
+let json = {}	
+let server_url = '{{ site.cdm-url }}'
+let collection = '{{ site.cdm-collection-id }}'
+let item = window.location.href.split('#')[1]
  
 let jsonData
   //  fetch(server_url + '//digital/iiif-info/' + collection + '/' + item + '/manifest.json')
